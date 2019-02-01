@@ -1,0 +1,13 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+  <h1>{{ page.title }}</h1>
+{#
+  {%  block sub_pages_navigation %}
+    <nav class="nav-horizontal nav-sub-pages">
+      {%  include 'partials/navigation-sub-pages.html.twig' %}
+    </nav>
+  {% endblock %}
+#}
+  {{ page.content }}
+{% endblock %}

@@ -1,0 +1,83 @@
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+<!DOCTYPE html>
+<html lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
+<head>
+  {% block head %}
+    <meta charset="utf-8" />
+    <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include 'partials/metadata.html.twig' %}
+
+    <link rel="icon" type="image/png" href="{{ url('theme://images/coderdojo-icon.png') }}" />
+    <link rel="canonical" href="{{ page.url(true, true) }}" />
+    {#<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">#}
+
+    {% block stylesheets %}
+      {% do assets.addCss('theme://css/normalize.css', 90) %}
+      {% do assets.addCss('theme://css/basic.css', 80) %}
+      {% do assets.addCss('theme://css/lato-latin-fonts.css', 70) %}
+      {% do assets.addCss('theme://css/font-awesome.css', 60) %}
+      {% do assets.addCss('theme://css/content.css', 50) %}
+    {% endblock %}
+    {{ assets.css() }}
+
+    {% block javascripts %}
+      {% do assets.addJs('jquery', 100) %}
+    {% endblock %}
+    {{ assets.js() }}
+  {% endblock head%}
+</head>
+<body id="top" class="{{ page.header.body_classes }}">
+
+{% block header %}
+  <header class="header">
+    <div class="wrapper padding">
+      <a class="logo" href="{{ base_url == '' ? '/' : base_url }}">
+        {% include 'partials/brand.html.twig' %}
+      </a>
+      {% block header_navigation %}
+        <nav class="nav-main nav-horizontal">
+          {% include 'partials/navigation-primary.html.twig' %}
+        </nav>
+      {% endblock %}
+    </div>
+  </header>
+{% endblock %}
+
+{% block body %}
+  <main class="body">
+    <div class="wrapper padding">
+      {% block content %}{% endblock %}
+    </div>
+  </main>
+{% endblock %}
+
+{% block footer %}
+  <footer class="footer text-center">
+    <div class="wrapper padding">
+      {% include 'partials/footer.html.twig' %}
+    </div>
+  </footer>
+{% endblock %}
+
+{% block bottom %}
+  {{ assets.js('bottom') }}
+{% endblock %}
+
+<script>
+  [].forEach.call(
+    document.querySelectorAll('li.has-children > a'),
+    function(el){
+      el.addEventListener(
+        'click',
+        function(){
+          console.log('foo')
+        },
+        true)
+    });
+</script>
+
+</body>
+</html>

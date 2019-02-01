@@ -1,0 +1,11 @@
+<ul>
+  {% for page in page.children.visible %}
+    {% set current_page = (page.active or page.activeChild) ? 'selected' : '' %}
+    <li class="{{ current_page }}">
+      <a href="{{ page.url }}">
+        {% if page.header.icon %}<i class="fa fa-{{ page.header.icon }}"></i>{% endif %}
+        {{ page.menu }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
