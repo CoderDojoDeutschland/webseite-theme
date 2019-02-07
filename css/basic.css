@@ -1,140 +1,168 @@
 /** Fonts **/
 
 body {
-    line-height: 1.4;
-    font-family: "LatoLatinWeb", "Lato", "Helvetica Neue", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-    font-size: 1rem;
+  line-height: 1.4;
+  font-family: "LatoLatinWeb", "Lato", "Helvetica Neue", "Helvetica", "Tahoma",
+    "Geneva", "Arial", sans-serif;
+  font-size: 1rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "LatoLatinWebHeavy", "Lato", "Helvetica Neue", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-    font-weight: 500;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "LatoLatinWebHeavy", "Lato", "Helvetica Neue", "Helvetica",
+    "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 500;
 }
 
 .discreet {
-    font-family: "LatoLatinWebLight", "Lato", "Helvetica Neue", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-    letter-spacing: 0.1rem;
+  font-family: "LatoLatinWebLight", "Lato", "Helvetica Neue", "Helvetica",
+    "Tahoma", "Geneva", "Arial", sans-serif;
+  letter-spacing: 0.1rem;
 }
 
 a {
-    color: hsl(199, 100%, 42%);
+  color: hsl(199, 100%, 42%);
 }
 
 /** Page layout **/
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.header .wrapper, .body .wrapper, .footer .wrapper {
-    max-width: 60rem;
-    margin-left: auto;
-    margin-right: auto;
+.header .wrapper,
+.body.wrapper,
+.footer .wrapper {
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .body img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 /** Header **/
 
 header {
-    background-color: hsl(199, 100%, 42%);
-    font-size: 112%;
-    font-weight: 700;
-    color: #fefefe;
+  background-color: hsl(199, 100%, 42%);
+  font-size: 112%;
+  font-weight: 700;
+  color: #fefefe;
 }
 
 header .logo svg {
-    float: left;
-    padding-left: 0.3em;
-    padding-right: 1.8em;
-    height: 4.7em;
+  float: left;
+  padding-left: 0.3em;
+  padding-right: 1.8em;
+  height: 4.7em;
 }
 
 header .nav-main {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 
 header .nav-main li {
-    background-color: hsl(199, 100%, 47%);
-    /*color: #333333;*/
-    margin: 0.1rem;
+  background-color: hsl(199, 100%, 47%);
+  /*color: #333333;*/
+  margin: 0.1rem;
 }
 
 header .nav-main li a {
-    color: inherit;
+  color: inherit;
 }
 
 header .nav-main li:hover {
-    box-shadow: -6px -5px 10px hsla(0, 0%, 0%, 0.15);
+  box-shadow: -6px -5px 10px hsla(0, 0%, 0%, 0.15);
 }
 
-header .nav-main li:hover:nth-of-type(1) { transform: scale(1.2) rotate(-11deg); }
-header .nav-main li:hover:nth-of-type(2) { transform: scale(1.2) rotate(-4deg); }
-header .nav-main li:hover:nth-of-type(3) { transform: scale(1.2) rotate(3deg); }
-header .nav-main li:hover:nth-of-type(4) { transform: scale(1.2) rotate(10deg); }
-header .nav-main li:hover:nth-of-type(5) { transform: scale(1.2) rotate(17deg); }
+header .nav-main li:hover:nth-of-type(1) {
+  transform: scale(1.2) rotate(-11deg);
+}
+header .nav-main li:hover:nth-of-type(2) {
+  transform: scale(1.2) rotate(-4deg);
+}
+header .nav-main li:hover:nth-of-type(3) {
+  transform: scale(1.2) rotate(3deg);
+}
+header .nav-main li:hover:nth-of-type(4) {
+  transform: scale(1.2) rotate(10deg);
+}
+header .nav-main li:hover:nth-of-type(5) {
+  transform: scale(1.2) rotate(17deg);
+}
 
-header .nav-main li:nth-of-type(1) { background-color: hsl(37,  80%,  54%); }
-header .nav-main li:nth-of-type(2) { background-color: hsl(272, 42%,  48%); }
-header .nav-main li:nth-of-type(3) { background-color: hsl(120, 38%,  50%); }
-header .nav-main li:nth-of-type(4) { background-color: hsl(358, 49%,  56%); }
+header .nav-main li:nth-of-type(1) {
+  background-color: hsl(37, 80%, 54%);
+}
+header .nav-main li:nth-of-type(2) {
+  background-color: hsl(272, 42%, 48%);
+}
+header .nav-main li:nth-of-type(3) {
+  background-color: hsl(120, 38%, 50%);
+}
+header .nav-main li:nth-of-type(4) {
+  background-color: hsl(358, 49%, 56%);
+}
 
 header a {
-    color: #fefefe;
-    text-decoration: none;
+  color: #fefefe;
+  text-decoration: none;
 }
 
 header .nav-sub-pages ul {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 header .nav-sub-pages li {
-    background-color: #b8b4b8;
+  background-color: #b8b4b8;
 }
 
 header .nav-horizontal li > ul {
-    display: none;
+  display: none;
 }
 
 header .nav-horizontal a {
-    padding: 0.4rem 0.8rem;
-    display: inline-block;
-    text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  display: inline-block;
+  text-decoration: none;
 }
 
 /** Main Content **/
 
 main .nav-horizontal li {
-    font-size: 140%;
-    font-weight: 700;
+  font-size: 140%;
+  font-weight: 700;
 }
 
 /** Footer **/
 
 footer {
-    background-image: url(/user/themes/cdd/images/back4.svg);
-    background-size: cover;
+  background-image: url(/user/themes/cdd/images/back4.svg);
+  background-size: cover;
 }
 
 footer .title {
-    color: hsla(272, 39%, 89%, 1);
-    font-size: 200%;
-    text-shadow: 5px 2px 9px #555555;
+  color: hsla(272, 39%, 89%, 1);
+  font-size: 200%;
+  text-shadow: 5px 2px 9px #555555;
 }
 
 footer a {
-    color: hsla(199, 75%, 25%, 1);
+  color: hsla(199, 75%, 25%, 1);
 }
 
 footer .nav-horizontal {
-    background-color: hsla(17, 55%, 80%, .5);
+  background-color: hsla(17, 55%, 80%, 0.5);
 }
 
 footer .nav-horizontal li {
-    display: inline-block;
-    padding: 0.75rem;
+  display: inline-block;
+  padding: 0.75rem;
 }
 
 /*
@@ -161,116 +189,197 @@ footer .nav-horizontal li {
 
 /** Generic classes **/
 
-.wrapper {
-    margin: 0 3rem;
+.layout-container {
+  margin: 0 3rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.layout-container aside {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+.layout-container aside:not(:empty) {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 30%;
+  -ms-flex: 0 0 30%;
+  flex: 0 0 30%;
+}
+
+.layout-container main {
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+}
+
+.layout-container aside:not(:empty) + main {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 65%;
+  -ms-flex: 0 0 65%;
+  flex: 0 0 65%;
+}
+
+@media screen and (min-width: 670px) {
+  .layout-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
 }
 
 .padding {
-    padding: 2rem 1rem;
+  padding: 2rem 1rem;
 }
 
 .nav-horizontal ul {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .nav-horizontal li {
-    display: inline-block;
+  display: inline-block;
 }
 
 /** Content **/
 
 h1 {
-    font-size: 2.6em;
+  font-size: 2.6em;
 }
 
 h2 {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 h3 {
-    font-size: 1.6em;
+  font-size: 1.6em;
 }
 
-.cd-orange { color: hsl(37,  96%,  54%); }
-.cd-purple { color: hsl(272, 39%,  44%); }
-.cd-green  { color: hsl(120, 43%,  50%); }
-.cd-blue   { color: hsl(199, 100%, 42%); }
-.cd-red    { color: hsl(358, 69%,  36%); }
+.cd-orange {
+  color: hsl(37, 96%, 54%);
+}
+.cd-purple {
+  color: hsl(272, 39%, 44%);
+}
+.cd-green {
+  color: hsl(120, 43%, 50%);
+}
+.cd-blue {
+  color: hsl(199, 100%, 42%);
+}
+.cd-red {
+  color: hsl(358, 69%, 36%);
+}
 
-a.action.cd-orange { background-color: hsl(37,  96%,  90%); }
-a.action.cd-purple { background-color: hsl(272, 39%,  90%); }
-a.action.cd-green  { background-color: hsl(120, 43%,  90%); }
-a.action.cd-blue   { background-color: hsl(199, 100%, 90%); }
-a.action.cd-red    { background-color: hsl(358, 69%,  90%); }
+a.action.cd-orange {
+  background-color: hsl(37, 96%, 90%);
+}
+a.action.cd-purple {
+  background-color: hsl(272, 39%, 90%);
+}
+a.action.cd-green {
+  background-color: hsl(120, 43%, 90%);
+}
+a.action.cd-blue {
+  background-color: hsl(199, 100%, 90%);
+}
+a.action.cd-red {
+  background-color: hsl(358, 69%, 90%);
+}
 
 a.action {
-    padding: 0.3em 0.6em;
-    border-radius: 0.3em;
+  padding: 0.3em 0.6em;
+  border-radius: 0.3em;
 }
 
 .action {
-    font-size: 2em;
-    text-decoration: none;
-    font-weight: 800;
-    margin: 1em 0;
-    display: inline-block;
+  font-size: 2em;
+  text-decoration: none;
+  font-weight: 800;
+  margin: 1em 0;
+  display: inline-block;
 }
 
 .action i.fa {
-    font-size: 2em;
-    vertical-align: middle;
-    padding-right: 0.2em;
+  font-size: 2em;
+  vertical-align: middle;
+  padding-right: 0.2em;
 }
 
 .highlight {
-    margin: 2em;
-    column-count: 2;
-    column-width: 15em;
-    line-height: 2;
+  margin: 2em;
+  column-count: 2;
+  column-width: 15em;
+  line-height: 2;
 }
 
 /** Media Queries **/
 
-@media screen and (max-width:730px) {
-    header {
-        font-size: 100%;
-        font-weight: 500;
-    }
+@media screen and (max-width: 730px) {
+  header {
+    font-size: 100%;
+    font-weight: 500;
+  }
 
-    footer .title {
-        font-size: 150%
-    }
+  footer .title {
+    font-size: 150%;
+  }
 
-    h1 { font-size: 2em;  }
-    h2 { font-size: 1.6em }
-    h3 { font-size: 1.2em }
-    .action { font-size: 1.6em; }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+  .action {
+    font-size: 1.6em;
+  }
 }
 
-@media screen and (max-width:670px) {
-    header .nav-main {
-        clear: left;
-    }
+@media screen and (max-width: 670px) {
+  header .nav-main {
+    clear: left;
+  }
 
-    header .logo svg {
-        padding-left: 0;
-        padding-right: 1em;
-        height: 2em;
-    }
+  header .logo svg {
+    padding-left: 0;
+    padding-right: 1em;
+    height: 2em;
+  }
 
-    header .logo .title {
-        line-height: 2em;
-    }
+  header .logo .title {
+    line-height: 2em;
+  }
 
-    .padding {
-        padding: 1rem;
-    }
+  .padding {
+    padding: 1rem;
+  }
 
-    footer .title {
-        font-size: 120%
-    }
+  footer .title {
+    font-size: 120%;
+  }
 
-    .action { font-size: 1.2em; }
+  .action {
+    font-size: 1.2em;
+  }
 }

@@ -47,11 +47,10 @@
 {% endblock %}
 
 {% block body %}
-  <main class="body">
-    <div class="wrapper padding">
-      {% block content %}{% endblock %}
-    </div>
-  </main>
+<div class="body wrapper padding layout-container">
+  <aside>{% block aside %}{% endblock %}</aside>
+  <main>{% block content %}{% endblock %}</main>
+</div>
 {% endblock %}
 
 {% block footer %}
