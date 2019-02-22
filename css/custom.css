@@ -1,7 +1,7 @@
 /* Core Stuff */
 
 body {
-    color: #606d6e;
+  color: #606d6e;
 }
 
 h1,
@@ -10,28 +10,28 @@ h3,
 h4,
 h5,
 h6 {
-    color: #454B4D;
+  color: #454b4d;
 }
 
 a {
-    color: #1F8CD6;
-    text-decoration: none;
+  color: #1f8cd6;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #175E91;
+  color: #175e91;
 }
 
 pre {
-    background: #F0F0F0;
-    margin: 1rem 0;
-    border-radius: 2px;
+  background: #f0f0f0;
+  margin: 1rem 0;
+  border-radius: 2px;
 }
 
 blockquote {
-    border-left: 10px solid #eee;
-    margin: 0;
-    padding: 0 1rem;
+  border-left: 10px solid #eee;
+  margin: 0;
+  padding: 0 1rem;
 }
 
 /* Content Styling */
@@ -42,19 +42,18 @@ blockquote {
 */
 
 .header {
-    background-color: #1F8DD6;
-    color: #eee;
+  background-color: #1f8dd6;
+  color: #eee;
 }
 
 .header a {
-    color: #fff;
+  color: #fff;
 }
 
 .header .logo {
-    font-size: 1.7rem;
+  font-size: 1.7rem;
 }
 
 .footer {
-    background-color: #eee;
+  background-color: #eee;
 }
-
