@@ -19,3 +19,17 @@
 .text-left {
     text-align: left;
 }
+
+.hidden {
+    display: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 1em;
+  justify-content: center;
+}
+
+.grid-container .c4 {
+  grid-template-columns: auto auto auto;
+}

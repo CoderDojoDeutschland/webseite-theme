@@ -1,8 +1,37 @@
 {% extends 'default.html.twig' %}
 
 {% block aside %}
-    <h2>Newsletter</h2>
-    <section style="font-size: 0.8rem; line-height: 1.5;">
-        <script id="n2g_script">!function(e,t,n,c,r,a,i){e.Newsletter2GoTrackingObject=r,e[r]=e[r]||function(){(e[r].q=e[r].q||[]).push(arguments)},e[r].l=1*new Date,a=t.createElement(n),i=t.getElementsByTagName(n)[0],a.async=1,a.src=c,i.parentNode.insertBefore(a,i)}(window,document,"script","https://static.newsletter2go.com/utils.js","n2g");var config = {"container": {"type": "div","class": "","style": ""},"row": {"type": "div","class": "","style": "margin-top: 15px;"},"columnLeft": {"type": "div","class": "","style": ""},"columnRight": {"type": "div","class": "","style": ""},"label": {"type": "label","class": "","style": ""}};n2g('create', 'dalkytlv-ppi7c9nn-8d');n2g('subscribe:createForm', config);</script>
+    <section>
+        <h2 class="hidden">Social Media Links</h2>
+        <div class="grid-container c3">
+            <a href="https://twitter.com/CoderDojoDeut">
+                <i class="fa fa-twitter-square"></i>
+            </a>
+            <a href="https://www.facebook.com/CoderDojoDeutschland">
+                <i class="fas fa-facebook-square"></i>
+            </a>
+            <a href="https://www.instagram.com/coderdojo_deutschland">
+                <i class="fas fa-instagram"></i>
+            </a>
+        </div>
+    </section>
+    <section>
+        <h2>Newsletter</h2>
+        <script id="n2g_script">
+            !function(e,t,n,c,r,a,i){
+                e.Newsletter2GoTrackingObject=r,e[r]=e[r]||function(){
+                    (e[r].q=e[r].q||[]).push(arguments)
+                },e[r].l=1*new Date,a=t.createElement(n),i=t.getElementsByTagName(n)[0],a.async=1,a.src=c,i.parentNode.insertBefore(a,i)
+            }(window,document,"script","https://static.newsletter2go.com/utils.js","n2g");
+            var config = {
+                "container": {"type": "div","class": "nwsltr container","style": ""},
+                "row": {"type": "div","class": "nwsltr row","style": ""},
+                "columnLeft": {"type": "div","class": "","style": ""},
+                "columnRight": {"type": "div","class": "","style": ""},
+                "label": {"type": "label","class": "","style": ""}
+            };
+            n2g('create', 'dalkytlv-ppi7c9nn-8d');
+            n2g('subscribe:createForm', config);
+        </script>
     </section>
 {% endblock %}
