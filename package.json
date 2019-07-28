@@ -1,0 +1,29 @@
+{
+  "name": "webseite-theme",
+  "version": "0.0.1",
+  "description": "CoderDojo Deutschland - Theme der offiziellen Webseite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoderDojoDeutschland/webseite-theme.git"
+  },
+  "keywords": [
+    "coderdojo",
+    "germany",
+    "theme",
+    "grav"
+  ],
+  "author": "Andreas Sander",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CoderDojoDeutschland/webseite-theme/issues"
+  },
+  "homepage": "https://github.com/CoderDojoDeutschland/webseite-theme#readme",
+  "private": true,
+  "devDependencies": {
+    "prettier": "1.16.4"
+  }
+}

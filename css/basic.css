@@ -2,8 +2,8 @@
 
 body {
   line-height: 1.4;
-  font-family: "LatoLatinWeb", "Lato", "Helvetica Neue", "Helvetica", "Tahoma",
-    "Geneva", "Arial", sans-serif;
+  font-family: 'LatoLatinWeb', 'Lato', 'Helvetica Neue', 'Helvetica', 'Tahoma',
+    'Geneva', 'Arial', sans-serif;
   font-size: 1rem;
 }
 
@@ -13,14 +13,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "LatoLatinWebHeavy", "Lato", "Helvetica Neue", "Helvetica",
-    "Tahoma", "Geneva", "Arial", sans-serif;
+  font-family: 'LatoLatinWebHeavy', 'Lato', 'Helvetica Neue', 'Helvetica',
+    'Tahoma', 'Geneva', 'Arial', sans-serif;
   font-weight: 500;
 }
 
 .discreet {
-  font-family: "LatoLatinWebLight", "Lato", "Helvetica Neue", "Helvetica",
-    "Tahoma", "Geneva", "Arial", sans-serif;
+  font-family: 'LatoLatinWebLight', 'Lato', 'Helvetica Neue', 'Helvetica',
+    'Tahoma', 'Geneva', 'Arial', sans-serif;
   letter-spacing: 0.1rem;
 }
 
