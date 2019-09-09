@@ -48,7 +48,7 @@ html {
 
 /** Header **/
 
-header {
+body > header {
   background-color: hsl(199, 100%, 42%);
   font-size: 112%;
   font-weight: 700;
@@ -221,6 +221,7 @@ footer .nav-horizontal li {
   -webkit-order: 0;
   -ms-flex-order: 0;
   order: 0;
+  max-width: 100%;
 }
 
 .layout-container aside:not(:empty) + main {
