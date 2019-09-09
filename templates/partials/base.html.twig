@@ -20,11 +20,15 @@
       {% do assets.addCss('theme://css/lato-latin-fonts.css', 70) %}
       {% do assets.addCss('theme://css/font-awesome.css', 60) %}
       {% do assets.addCss('theme://css/content.css', 50) %}
+      {% do assets.addCss('//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css') %}
+      {% do assets.addCss('//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css') %}
+      {% do assets.addCss('theme://css/slick-slider-custom.css') %}
     {% endblock %}
     {{ assets.css() }}
 
     {% block javascripts %}
       {% do assets.addJs('jquery', 100) %}
+      {% do assets.addJs('//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js', {'group': 'bottom'}) %}
     {% endblock %}
     {{ assets.js() }}
   {% endblock head%}
@@ -49,7 +53,13 @@
 {% block body %}
 <div class="body wrapper padding layout-container">
   <aside>{% block aside %}{% endblock %}</aside>
-  <main>{% block content %}{% endblock %}</main>
+  <main>
+    {% block content %}{% endblock %}
+    {% if page.home %}
+        {# Zeige die Sponsoren auf der Startseite nach dem Hauptinhalt #}
+        {{ sponsoren() }}
+    {% endif %}
+  </main>
 </div>
 {% endblock %}
 

@@ -1,0 +1,27 @@
+.slick-initialized .slick-track {
+    display: flex;
+    align-items: center;
+}
+
+.slick-slide img {
+    max-width: 100%;
+    margin: 0 auto;
+    max-height: 300px;
+}
+
+.slick-prev,
+.slick-next {
+    z-index: 1;
+}
+
+.slick-prev {
+    left: 5px;
+}
+
+.slick-next {
+    right: 5px;
+}
+
+.slick-slide {
+    padding: 0 5px;
+}
