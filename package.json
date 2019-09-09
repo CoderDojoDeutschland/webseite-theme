@@ -1,6 +1,6 @@
 {
   "name": "webseite-theme",
-  "version": "0.0.1",
+  "version": "0.3.0",
   "description": "CoderDojo Deutschland - Theme der offiziellen Webseite",
   "main": "index.js",
   "scripts": {
