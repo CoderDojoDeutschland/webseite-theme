@@ -24,13 +24,13 @@
       {% do assets.addCss('//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css') %}
       {% do assets.addCss('theme://css/slick-slider-custom.css') %}
     {% endblock %}
-    {{ assets.css() }}
+    {{ assets.css() | raw }}
 
     {% block javascripts %}
       {% do assets.addJs('jquery', 100) %}
       {% do assets.addJs('//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js', {'group': 'bottom'}) %}
     {% endblock %}
-    {{ assets.js() }}
+    {{ assets.js() | raw }}
   {% endblock head%}
 </head>
 <body id="top" class="{{ page.header.body_classes }}">
@@ -72,7 +72,7 @@
 {% endblock %}
 
 {% block bottom %}
-  {{ assets.js('bottom') }}
+  {{ assets.js('bottom') | raw }}
 {% endblock %}
 
 <script>
